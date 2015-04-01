@@ -1,1 +1,6 @@
 C:\Users\Ирина\Documents\Visual Studio 2012\Projects\WebCrawler\WebCrawler\bin\Debug\WebCrawler.exe.config
+C:\Users\Ирина\Documents\Visual Studio 2012\Projects\WebCrawler\WebCrawler\bin\Debug\WebCrawler.exe
+C:\Users\Ирина\Documents\Visual Studio 2012\Projects\WebCrawler\WebCrawler\bin\Debug\WebCrawler.pdb
+C:\Users\Ирина\Documents\Visual Studio 2012\Projects\WebCrawler\WebCrawler\obj\Debug\WebCrawler.csprojResolveAssemblyReference.cache
+C:\Users\Ирина\Documents\Visual Studio 2012\Projects\WebCrawler\WebCrawler\obj\Debug\WebCrawler.exe
+C:\Users\Ирина\Documents\Visual Studio 2012\Projects\WebCrawler\WebCrawler\obj\Debug\WebCrawler.pdb
