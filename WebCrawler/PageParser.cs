@@ -4,7 +4,7 @@
      * <p>Операции над HTML страницами</p>
      */
 
-    public interface PageParser
+    public interface IPageParser
     {
             //Убрать html-теги из файла
             //параметры: htmlFile (входной), textFile (выходной)
