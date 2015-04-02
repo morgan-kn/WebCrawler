@@ -4,3 +4,5 @@ C:\Users\Ирина\Documents\Visual Studio 2012\Projects\WebCrawler\WebCrawler\
 C:\Users\Ирина\Documents\Visual Studio 2012\Projects\WebCrawler\WebCrawler\obj\Debug\WebCrawler.csprojResolveAssemblyReference.cache
 C:\Users\Ирина\Documents\Visual Studio 2012\Projects\WebCrawler\WebCrawler\obj\Debug\WebCrawler.exe
 C:\Users\Ирина\Documents\Visual Studio 2012\Projects\WebCrawler\WebCrawler\obj\Debug\WebCrawler.pdb
+C:\Users\Ирина\Documents\Visual Studio 2012\Projects\WebCrawler\WebCrawler\bin\Debug\nunit.framework.dll
+C:\Users\Ирина\Documents\Visual Studio 2012\Projects\WebCrawler\WebCrawler\bin\Debug\nunit.framework.xml

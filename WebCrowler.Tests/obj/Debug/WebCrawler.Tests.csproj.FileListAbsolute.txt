@@ -1,0 +1,7 @@
+C:\Users\Ирина\Documents\Visual Studio 2012\Projects\WebCrawler\WebCrowler.Tests\bin\Debug\WebCrowler.Tests.dll
+C:\Users\Ирина\Documents\Visual Studio 2012\Projects\WebCrawler\WebCrowler.Tests\bin\Debug\WebCrowler.Tests.pdb
+C:\Users\Ирина\Documents\Visual Studio 2012\Projects\WebCrawler\WebCrowler.Tests\bin\Debug\WebCrawler.exe
+C:\Users\Ирина\Documents\Visual Studio 2012\Projects\WebCrawler\WebCrowler.Tests\bin\Debug\WebCrawler.pdb
+C:\Users\Ирина\Documents\Visual Studio 2012\Projects\WebCrawler\WebCrowler.Tests\obj\Debug\WebCrawler.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Ирина\Documents\Visual Studio 2012\Projects\WebCrawler\WebCrowler.Tests\obj\Debug\WebCrowler.Tests.dll
+C:\Users\Ирина\Documents\Visual Studio 2012\Projects\WebCrawler\WebCrowler.Tests\obj\Debug\WebCrowler.Tests.pdb

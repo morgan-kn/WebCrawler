@@ -7,16 +7,16 @@ namespace WebCrawler
 {
     class WebCrawlerImpl : IWebCrawler
     {
-        private readonly PageTaskManager pageTaskManager;
-        private readonly PageDownloader pageDownloader;
-        private readonly EncodingDetector encodingDetector;
-        private readonly EncodingConverter encodingConverter;
-        private readonly PageParser pageParser;
-        private readonly PageFileManager pageFileManager;
-        private static readonly CharSet utf8Charset = CharSet.Unicode; // private static final Charset utf8Charset = Charset.forName("utf-8");
+        private readonly IPageTaskManager pageTaskManager;
+        private readonly IPageDownloader pageDownloader;
+        private readonly IEncodingDetector encodingDetector;
+        private readonly IEncodingConverter encodingConverter;
+        private readonly IPageParser pageParser;
+        private readonly IPageFileManager pageFileManager;
+        private static readonly CharSet utf8Charset = CharSet.Unicode; // todo private static final Charset utf8Charset = Charset.forName("utf-8");
 
-        public WebCrawlerImpl(PageTaskManager pageTaskManager, PageDownloader pageDownloader, EncodingDetector encodingDetector, 
-            EncodingConverter encodingConverter, PageParser pageParser, PageFileManager pageFileManager)
+        public WebCrawlerImpl(IPageTaskManager pageTaskManager, IPageDownloader pageDownloader, IEncodingDetector encodingDetector, 
+            IEncodingConverter encodingConverter, IPageParser pageParser, IPageFileManager pageFileManager)
         {
             this.pageTaskManager = pageTaskManager;
             this.pageDownloader = pageDownloader;
@@ -25,7 +25,7 @@ namespace WebCrawler
             this.pageParser = pageParser;
             this.pageFileManager = pageFileManager;
         }
-
+        
         public void Run()
         {
             while (true)
