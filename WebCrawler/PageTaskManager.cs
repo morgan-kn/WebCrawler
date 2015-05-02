@@ -1,24 +1,58 @@
-﻿namespace WebCrawler
+using System.Collections.Generic;
+using System.IO;
+
+namespace WebCrawler
 {
-    /**
-     * <p>Менеджер задач.</p>
-     */
-
-    interface PageTaskManager
+    public class PageTaskManager : IPageTaskManager
     {
-        // Получить задачу для обработки, 
-        // Вернуть ссылку для скачивания
+        private List<string> queue;
+        private HashSet<string> completedTasks;
 
-        string GetTask();
+        public PageTaskManager()
+        {
+            var completed = new string[0];
+            if (File.Exists("completedTasks.txt"))
+            {
+                completed = File.ReadAllLines("completedTasks.txt");
+            }
 
-        // Вернуть задачу обратно в очередь, параметр - ссылка
+            var current = new string[0];
+            if (File.Exists("queue.txt"))
+            {
+                current = File.ReadAllLines("queue.txt");
+            }
 
-        void UncompleteTask(string link);
-        
-            // Пометить задачу как завершенную. Положить список новых ссылок в очередь
-            //параметр - ссылка
-            // вернуть список новых ссылок
+            queue = new List<string>(current);
+            completedTasks = new HashSet<string>(completed);
+        }
 
-        void CompleteTask(string link, string[] newLinks);
+        public string GetTask()
+        {
+            if (queue.Count == 0)
+                return null;
+            var task = queue[0];
+            queue.RemoveAt(0);
+            File.WriteAllLines("queue.txt", queue);
+            return task;
+        }
+
+        public void UncompleteTask(string link)
+        {
+            queue.Add(link);
+        }
+
+        public void CompleteTask(string link, string[] newLinks)
+        {
+            completedTasks.Add(link);
+            File.AppendAllLines("completedTasks.txt", new [] {link});
+            foreach (var uncheckedLink in newLinks)
+            {
+                if (!completedTasks.Contains(uncheckedLink))
+                {
+                    queue.Add(uncheckedLink);
+                    File.AppendAllLines("queue.txt", newLinks);
+                }
+            }
+        }
     }
 }
